@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jS-function-assign</title>
+</head>
+<body>
+<p>The total addition = <b id="demo1"></b></p> 
+<p> The total subtraction = <b id="demo2"></b></p>  
+<p>The total multiplication = <b id="demo3"></b></p> 
+<p>The total exponentiation = <b id="demo4"></b></p>
+<p>The total division = <b id="demo5"></b></p>
+<p>The total modulus = <b id="demo6"></b></p>
+<p>The total increment = <b id="demo7"></b></p>    
+<p>The total decrement = <b id="demo8"></b></p>
+
+
+<script>
+// js-function-code
+function myfunction(a,b){
+    let c = a + b;
+    return c
+}
+document.getElementById('demo1').innerHTML= myfunction(2,2);
+
+
+let z = $money(7,6);
+document.getElementById('demo2').innerHTML= z;
+function $money(x,y){
+    return x - y
+}
+function $lottery(x,y){
+    const z = x * y
+    return z
+}
+document.getElementById('demo3').innerHTML= $lottery(2,2);
+
+var x = $boom(4,4);
+document.getElementById('demo4').innerHTML= x;
+function $boom(z,y){
+    return z ** y
+}
+function $one(a,b){
+    var c = (a / b)
+    return c
+}
+document.getElementById('demo5').innerHTML= $one(22,2);
+
+function $two(z,y){
+    var x = z % y
+    return x
+}
+document.getElementById('demo6').innerHTML= $two(100,100);
+
+let c = $dom(15,10);
+document.getElementById('demo7').innerHTML= c;
+function $dom(a,b){
+    return +a ++ -b
+}
+ 
+ 
+ function $happy(z,y){
+    let x = -z -- -y
+    return c
+ }
+ document.getElementById('demo8').innerHTML= $happy(20,25);
+
+</script>    
+</body>
+</html>
